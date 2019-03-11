@@ -1,0 +1,161 @@
+
+
+.container{
+	width: 403px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background: red;
+	animation-name: ground;
+  	animation-duration: 2s;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes ground {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.line{
+	top: 450px;
+	left: 0px;
+	width: 403px;
+	height: 5px;
+	background-color: black;
+	background-size: 100%;
+	position: absolute;
+	z-index: 5;
+	opacity:1;
+}
+
+.line:hover
+{
+        opacity:0;
+}
+
+.black{
+	top: 75px;
+	left: 90px;
+	width: 230px;
+	height: 5px;
+	background-color: black;
+	background-size: 100%;
+	position: absolute;
+	z-index: 2;
+	opacity:1;
+}
+
+.black:hover
+{
+        opacity:0;
+}
+
+.red{
+	top: 20px;
+	left: 80px;
+	background-size: 100%;
+	position: absolute;
+  	color: white;
+  	text-align: center;
+  	font-size: 40px;
+  	font-family: ZCOOL QingKe HuangYou;
+  	z-index: 1;
+}
+
+.title{
+	top: 100px;
+	left: 50px;
+	width: auto;
+	height: auto;
+	background-size: 100%;
+	position: absolute;
+	z-index: 4;
+}
+.title
+{
+        opacity:1;
+}
+.title:hover
+{
+        opacity:0;
+}
+
+.yellow{
+	top: 450px;
+	left: 0px;
+	width: 403px;
+	height: 200px;
+	background-color: yellow;
+	background-size: 100%;
+	position: absolute;
+	z-index: 3;
+	animation-name: back;
+  	animation-duration: 2s;
+  	animation-iteration-count: infinite;
+}
+@keyframes back {
+  from {background-color: yellow;}
+  to {background-color: red;}
+}
+
+.hat{
+	top: 190px;
+	left: 40px;
+	width: auto;
+	height: auto;
+	position: absolute;
+	z-index: 7;
+}
+
+.face{
+	top: 345px;
+	left: 60px;
+	width: auto;
+	height: auto;
+	background-size: 100%;
+	position: absolute;
+	z-index: 6;
+}
+
+.eye{
+	top: 375px;
+	left: 155px;
+	width: auto;
+	height: auto;
+	background-size: 100%;
+	position: absolute;
+	z-index: 8;
+	animation-name: spin;
+  	animation-duration: 5000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear; 
+}
+.eye
+{
+        opacity:1;
+}
+.eye:hover
+{
+        opacity:0;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.shirt{
+	top: 505px;
+	left: 0px;
+	width: auto;
+	height: auto;
+	background-size: 100%;
+	position: absolute;
+	z-index: 9;
+}
